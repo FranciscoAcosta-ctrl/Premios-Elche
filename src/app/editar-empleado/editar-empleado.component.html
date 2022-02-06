@@ -1,0 +1,41 @@
+<app-crud></app-crud>
+<div class="card">
+    <div class="card-header">
+        Editar Cliente
+    </div>
+    <div  class="card-body">
+
+        <form [formGroup]="formularioDeClientes" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input formControlName="nombre" type="text" class="form-control" name="" id="nombreInput" aria-describedby="helpId"
+                    placeholder="Nombre Completo">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Direccion</label>
+                <input formControlName="direccion" type="text" class="form-control" name="" id="direccionInput" aria-describedby="helpId"
+                    placeholder="Ej. Mexico, CDMX, Fray Servantes Calle #13">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Telefono</label>
+                <input formControlName="telefono" type="tel" class="form-control" name="" id="telefonoInput" aria-describedby="helpId"
+                    placeholder="Ej. 5530302020">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Fecha de Nacimiento</label>
+                <input formControlName="fecha_nacimiento" type="date" class="form-control" name="" id="fechaInput" aria-describedby="helpId"
+                    placeholder="Ej. 5530302020">
+            </div>
+           <div class="btn-group" role="group" aria-label="">
+               <button type="submit" class="btn btn-success me-3">Editar</button>
+               <button type="button" class="btn btn-primary ">Cancelar</button>
+
+           </div>
+        </form>
+
+
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
