@@ -25,7 +25,11 @@ export class CrudService {
  }
 
  
- ObtenerCliente(id:any):Observable<any>{
+  ObtenerCliente(id:any):Observable<any>{
   return this.clienteHttp.get(this.API+"?consultar="+id);
 }
+
+  EditarCliente(id:any, datosCliente:Cliente):Observable<any>{
+    return this.clienteHttp.post(this.API+"?actualizar="+id,datosCliente);
+ }
 }

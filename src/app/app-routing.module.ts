@@ -4,16 +4,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { AgregarEmpleadoComponent } from './agregar-empleado/agregar-empleado.component';
 import { EditarEmpleadoComponent } from './editar-empleado/editar-empleado.component';
 import { ListarEmpleadoComponent } from './listar-empleado/listar-empleado.component';
+import { RuletaComponent } from './ruleta/ruleta.component';
+import { AgradecimientoComponent } from './agradecimiento/agradecimiento.component';
 
 
 const routes: Routes = [
 
-  {path: '', pathMatch: 'full', redirectTo: 'agregar-empleado'},
-  { path: 'agregar-empleado', component: AgregarEmpleadoComponent },
+  {path: '', pathMatch: 'full', redirectTo: 'agregar-cliente'},
+  { path: 'agregar-cliente', component: AgregarEmpleadoComponent },
   
-  { path: 'listar-empleado', component: ListarEmpleadoComponent },
+  { path: '2408/listar-cliente', component: ListarEmpleadoComponent },
   
-  { path: 'editar-empleado/:id', component: EditarEmpleadoComponent },
+  { path: 'editar-cliente/:id', component: EditarEmpleadoComponent },
+
+  { path: 'agradecimiento', component: AgradecimientoComponent },
+
+  { path: 'ruleta-premio', component: RuletaComponent }
 ];
 
 @NgModule({

@@ -34,7 +34,7 @@ export class AgregarEmpleadoComponent implements OnInit {
     console.log(this.formDeClientes.value);
     
     this.CrudService.AgregarCliente(this.formDeClientes.value).subscribe();
-    this.ruteador.navigateByUrl('/listar-empleado');
+    this.ruteador.navigateByUrl('/agradecimiento');
   }
 
 

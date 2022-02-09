@@ -4,25 +4,25 @@
     </div>
     <div class="card-body">
 
-        <form [formGroup]="formDeClientes" (ngSubmit)="enviarDatos()">
+        <form ngNativeValidate [formGroup]="formDeClientes" (ngSubmit)="enviarDatos()">
             <div class="mb-3">
                 <label for="" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="" formControlName="nombre" id="nombreInput" aria-describedby="helpId"
+                <input required type="text" class="form-control" name="" formControlName="nombre" id="nombreInput" aria-describedby="helpId"
                     placeholder="Nombre Completo">
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Direccion</label>
-                <input type="text" class="form-control" name="" formControlName="direccion" id="direccionInput" aria-describedby="helpId"
+                <input required type="text" class="form-control" name="" formControlName="direccion" id="direccionInput" aria-describedby="helpId"
                     placeholder="Ej. Mexico, CDMX, Fray Servantes Calle #13">
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" name="" formControlName="telefono" id="telefonoInput" aria-describedby="helpId"
+                <input required type="tel" class="form-control" name="" formControlName="telefono" id="telefonoInput" aria-describedby="helpId"
                     placeholder="Ej. 5530302020">
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" name="" formControlName="fecha_nacimiento" id="fechaInput" aria-describedby="helpId"
+                <input required type="date" class="form-control" name="" formControlName="fecha_nacimiento" id="fechaInput" aria-describedby="helpId"
                     placeholder="Ej. 5530302020">
             </div>
            <div class="btn-group" role="group" aria-label="">

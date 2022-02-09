@@ -11,6 +11,8 @@ import { ListarEmpleadoComponent } from './listar-empleado/listar-empleado.compo
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { RuletaComponent } from './ruleta/ruleta.component';
+import { AgradecimientoComponent } from './agradecimiento/agradecimiento.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {HttpClientModule} from '@angular/common/http';
     CrudComponent,
     AgregarEmpleadoComponent,
     EditarEmpleadoComponent,
-    ListarEmpleadoComponent
+    ListarEmpleadoComponent,
+    RuletaComponent,
+    AgradecimientoComponent
   ],
   imports: [
     BrowserModule,
