@@ -7,7 +7,7 @@ import { Cliente } from './Cliente';
   providedIn: 'root'
 })
 export class CrudService {
-  API:string = 'http://localhost:9090/clientes/'; 
+  API:string = 'https://www.elchedelbarrio.com/clientes/'; 
 
   /**El error que marca en el editor no es un error de programacion solo es sintaxis */
   constructor(private clienteHttp:HttpClient) {}
