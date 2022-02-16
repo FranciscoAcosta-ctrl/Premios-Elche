@@ -31,8 +31,9 @@ import { AgradecimientoComponent } from './agradecimiento/agradecimiento.compone
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [ HttpClientModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
